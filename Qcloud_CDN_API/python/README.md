@@ -26,7 +26,7 @@ python QcloudCdnTools_V2.py UpdateCdnProject -u xxxxx -p xxxxxxx  --hostId 20609
 python QcloudCdnTools_V2.py UpdateCdnHost -u xxxxx -p xxxxxxx  --hostId 206092 --host xxxxxxxtang.vip2.oa.com --origin 1.1.1.2
 
 ## UpdateCdnConfig
-python QcloudCdnTools_V2.py UpdateCdnConfig -u xxxxx -p xxxxxxx  --hostId 206084 --projectId 0 --cacheMode custom --cache  [[0,\"all\",1023448]] --refer [1,[\"qq.baidu.com\",\"v.qq.com\"]] --fwdHost qq.com.cn --fullUrl off --debug
+python QcloudCdnTools_V2.py UpdateCdnConfig -u xxxxx -p xxxxxxx --hostId 206084 --projectId 0 --cacheMode custom --cache '[[0,"all",1023448]]' --refer '[1,["qq.baidu.com","v.qq.com"]]' --fwdHost qq.com.cn --fullUrl off --debug
 
 ## OfflineHost
 python QcloudCdnTools_V2.py OfflineHost -u xxxxx -p xxxxxxx  --hostId 206092
